@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <h2 class="logo">Dona</h2>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="dua-kolom">
+      <div class="konten-teks">
+        <h1>My Skills</h1>
+        <p>Saya menguasai dasar pengembangan website dan desain antarmuka dengan gaya modern dan rapi, serta mampu membuat tampilan yang responsif dan mudah digunakan.</p>
+      </div>
+      <div class="konten-foto">
+        <img src="Screenshot 2025-12-07 095936.png" alt="Skill 1" />
+      </div>
+    </section>
+
+    <section class="dua-kolom reverse">
+      <div class="konten-teks">
+        <h1>Other Skills</h1>
+        <p>Saya memiliki kemampuan dalam bidang editing, baik untuk memperbaiki tampilan maupun meningkatkan kualitas konten agar terlihat lebih rapi, menarik, dan profesional.</p>
+      </div>
+      <div class="konten-foto">
+        <img src="download (7).jpg" alt="Skill 2" />
+      </div>
+    </section>
+
+    <section class="dua-kolom">
+      <div class="konten-teks">
+        <h1>Detail Skills</h1>
+        <table class="skills-table">
+          <tr>
+            <th>Skill</th>
+            <th>Level</th>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Advanced</td>
+          </tr>
+          <tr>
+            <td>UI Design</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Editing</td>
+            <td>Advanced</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

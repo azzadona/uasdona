@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h2 class="logo">Dona</h2>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="dua-kolom">
+      <div class="konten-teks">
+        <h1>Diving</h1>
+        <p>Saya suka diving karena saya suka melihat keindahan bawah laut secara langsung. Menyelam membuat saya merasa tenang, senang, dan lebih dekat dengan alam. Saya juga bisa melihat berbagai ikan dan terumbu karang yang indah.</p>
+      </div>
+      <div class="konten-foto">
+        <img src="o1.jpg" />
+      </div>
+    </section>
+
+    <section class="dua-kolom reverse">
+      <div class="konten-teks">
+        <h1>Berkebun</h1>
+        <p>Saya hobi berkebun karena saya suka merawat tanaman dan melihatnya tumbuh setiap hari. Berkebun membuat saya merasa lebih tenang dan sabar.</p>
+      </div>
+      <div class="konten-foto">
+        <img src="images (2).jpg" />
+      </div>
+    </section>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

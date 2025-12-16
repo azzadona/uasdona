@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <h2 class="logo">Dona</h2>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="dua-kolom">
+      <div class="konten-teks">
+        <h1>About Me</h1>
+        <p>
+          Halo, saya Dona, seorang mahasiswa yang memiliki minat besar di bidang teknologi, khususnya pengembangan website dan desain UI. Saya terbiasa menggunakan HTML, CSS, dan JavaScript untuk membuat tampilan website yang sederhana
+          namun menarik. Saya senang belajar hal baru dan terus mengembangkan kemampuan saya melalui berbagai latihan dan proyek kecil.
+        </p>
+      </div>
+      <div class="konten-foto">
+        <img src="d1.jpg" alt="foto" />
+      </div>
+    </section>
+
+    <section class="dua-kolom reverse">
+      <div class="konten-teks">
+        <h1>My Journey</h1>
+        <p>
+          Perjalanan saya di dunia teknologi dimulai dari rasa penasaran tentang bagaimana sebuah website dibuat. Dari situ, saya mulai belajar HTML dan CSS di kampus saya, lalu berkembang dengan mempelajari JavaScript untuk menambah fungsi
+          pada website. Setiap proses belajar dan proyek kecil yang saya kerjakan menjadi langkah penting dalam perjalanan saya untuk terus berkembang sebagai web developer.
+        </p>
+      </div>
+      <div class="konten-foto">
+        <img src="Gambar WhatsApp 2025-11-20 pukul 22.33.24_cca55c3f.jpg" alt="foto" />
+      </div>
+    </section>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

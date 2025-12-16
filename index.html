@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <h2 class="logo">Dona</h2>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="dua-kolom">
+      <div class="konten-teks">
+        <h1>Welcome To My Website</h1>
+        <p>“Halo! Saya Dona, di sini kamu bisa mengenal saya lebih dekat dan melihat apa yang saya sukai.”</p>
+      </div>
+
+      <div class="konten-foto">
+        <img src="d3.jpg" alt="Foto Dona" />
+      </div>
+    </section>
+
+    <footer>
+      <h3>Dona</h3>
+      <p>Personal Website</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="hobby.html">Hobby</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </footer>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

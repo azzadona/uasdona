@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav>
+      <h2 class="logo">Dona</h2>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="hobby.html">Hobby</a></li>
+        <li><a href="payment.html">Payment</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section class="contact-section">
+      <h1>Transaksi Layanan</h1>
+
+      <form class="contact-form" onsubmit="return prosesBayar()">
+        <input type="text" id="nama" placeholder="Nama Lengkap" required />
+        <input type="email" id="email" placeholder="Email" required />
+
+        <select id="layanan" onchange="hitungHarga()" required>
+          <option value="">Pilih Layanan</option>
+          <option value="500000">Web Personal</option>
+          <option value="300000">UI Design</option>
+          <option value="200000">Editing Konten</option>
+        </select>
+
+        <input type="text" id="total" placeholder="Total Bayar" readonly />
+
+        <button type="submit">Bayar Sekarang</button>
+      </form>
+
+      <p id="status" style="margin-top: 20px; font-weight: bold"></p>
+    </section>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("menu").classList.toggle("active");
+      }
+
+      function hitungHarga() {
+        let harga = document.getElementById("layanan").value;
+        document.getElementById("total").value = harga ? "Rp " + Number(harga).toLocaleString("id-ID") : "";
+      }
+
+      function prosesBayar() {
+        let nama = document.getElementById("nama").value;
+        let layanan = document.getElementById("layanan").value;
+
+        if ((layanan = "")) {
+          alert("Pilih layanan dulu");
+          return false;
+        }
+
+        document.getElementById("status").innerHTML = "✅ Pembayaran atas nama <b>" + nama + "</b> berhasil.";
+
+        return false;
+      }
+    </script>
+  </body>
+</html>
